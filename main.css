@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 24px;
+    color: black;
+    display: block;
+    text-align: center;
+  }
+  
+  /*baseline media sizing, mobile first */
+
+.main-header {
+    background-color: grey;
+    color: white;
+    margin: 0px;
+    padding: 40px;
+    height: 40%;
+    width: 100%;
+    display: block;
+}
+
+.main-nav { 
+    background-color: white;
+    color:grey;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 20px;
+    line-height: 2;
+    color: black;
+}
+
+.navbar, .content {
+    background-color: gray;
+    padding: 5px;
+    color: white;
+  }
+
+.navbar {
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}   
+
+.content-nav {
+/*begins as hamburger icon then becomes words on desktop*/
+        display: none;
+        position: absolute;
+        right: 0;
+        left: auto;
+        z-index: 1;
+       /* min-width: 200px;*/
+        font-size: 20px;
+        background-color: darkgray;
+    }
+
+
+ 
+/*show the dropdown on hover*/
+.nav-dropdown:hover .content-nav {
+    display: block;
+    
+}
+
+.projects{
+    display: flex;
+    display: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.projects > img {
+    width: 100px;
+    height: 100px;
+}
+
+  
+ /* @media screen and (min-width: 500px) {
+  
+    /*sizing tablets small laptops*/
+ /*   section {
+      width: 60%;
+    }
+    
+
+  } */
+  
+  
+  /*@media screen and (min-width: 800px) {
+  
+    /*sizing tablets and desktop*/
+  /*  section  {
+      width: 33%;
+    }
+     .hamburger {
+    display: none;
+    }
+
+  }*/
+  
