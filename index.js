@@ -5,5 +5,4 @@ const acrostic = function(words){
 }; 
 
 
-const codedPoetry = 
-alert("Happiness is coding, executing"+"\\n"+"Thougt provoking ideas."+"\\n"+"Making it work elegantly,"+"\\n"+"Loving the process!"+"\\n"+" "+"\\n"+"Creativity is"+"\\n"+"Salve for the"+"\\n"+"Soul."+"\\n"+" "+"\\n"+"Joy in finding the working"+"\\n"+"Solutions."+"\\n"+""+"\\n"+"Recognizing"+"\\n"+"Each others' strengths"+"\\n"+"And"+"\\n"+"Collaborating  -"+"\\n"+"Thoughfully"+"\\n"+" "+"\\n"+"Noticing the dawn of"+"\\n"+"Opportunities to"+"\\n"+"Discover something new: "+"\\n"+"Emergence of inspriration."+"\\n"+" "+"\\n"+" Searching with well designed"+"\\n"+"Queries, communicating results, "+"\\n"+"Leaving no stone un-turned.");
+const codedPoetry = alert("Happiness is coding, executing"+"\n"+"Thougt provoking ideas."+"\n"+"Making it work elegantly,"+"\\n"+"Loving the process!"+"\\n"+" "+"\\n"+"Creativity is"+"\\n"+"Salve for the"+"\\n"+"Soul."+"\\n"+" "+"\\n"+"Joy in finding the working"+"\\n"+"Solutions."+"\\n"+""+"\\n"+"Recognizing"+"\\n"+"Each others' strengths"+"\\n"+"And"+"\\n"+"Collaborating  -"+"\\n"+"Thoughfully"+"\\n"+" "+"\\n"+"Noticing the dawn of"+"\\n"+"Opportunities to"+"\\n"+"Discover something new: "+"\\n"+"Emergence of inspriration."+"\\n"+" "+"\\n"+" Searching with well designed"+"\\n"+"Queries, communicating results, "+"\\n"+"Leaving no stone un-turned.");
