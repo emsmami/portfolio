@@ -3,28 +3,50 @@
   }
   
   body {
+    height: 100%;
     font-size: 24px;
     color: black;
     display: block;
     text-align: center;
+    background-color:grey;
   }
   
   /*baseline media sizing, mobile first */
+.index-body {
+    background-color: white;
+}
 
-.main-header {
+.main-title{
+    display: none;
+}
+.index-header {
     background-color: grey;
-    color: white;
+    color:white;
     margin: 0px;
     padding: 40px;
     height: 40%;
     width: 100%;
     display: block;
+    font-size: 30px;
 }
 
+.page-header {
+    background-color:white ;
+    color:grey;
+    margin: 0px;
+    padding: 40px;
+    height: 40%;
+    width: 100%;
+    display: block;
+    font-size: 30px;
+
+}
 .main-nav { 
     background-color: white;
     color:grey;
     display: block;
+    padding: 0px;
+    margin: 0px;
 }
 
 ul {
@@ -37,7 +59,7 @@ ul {
 
 .navbar, .content {
     background-color: gray;
-    padding: 5px;
+    /*padding: 5px;*/
     color: white;
   }
 
@@ -80,31 +102,259 @@ ul {
     flex-wrap: wrap;
 }
 .projects > img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
 }
 
-  
- /* @media screen and (min-width: 500px) {
-  
+a.button {
+    background-color: none;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: gray;
+}
+
+a.button:visited {
+    color: #35304d;
+}
+.circle1 {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 350px;
+    padding: 25px;
+    background: white;
+    color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circleshape {
+transform:translate(-50%,-50%);
+  position:relative;
+  top:50%;
+  left:50%;
+  font-size: 2vh;
+}
+
+.fullpage-nav, .aside {
+    display: none;
+}
+
+#Contact {
+    background-color: white;
+    border: 3px white solid;
+    padding: 10px;
+    margin: 10px;
+    color: grey;
+    align-self: center;
+}
+
+@media screen and (min-width: 500px) {
+    .circle1 {
+        height: 400px;
+        width: 400px; 
+    }
+
+
+    .circleshape {
+          font-size: 2vh;
+        }
+        
+    }
     /*sizing tablets small laptops*/
- /*   section {
-      width: 60%;
+ @media screen and (min-width: 768px) {
+
+    body {
+        background-color: gray;
+        font-size: 30px;
+    }
+    .content {    
+        display: flex;
+        flex-direction: row;
+        color: white;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;     
+      }
+
+      .index-content {
+        display: flex;
+        flex-direction: row;
+        background-color:grey ;
+        height: 100vh;
+    }  
+
+    .index-header {
+        display: none;
+    }
+
+    .page-header {
+        background-color:white;
+        colorg: gray;
+        margin: 0px;
+        padding: 40px;
+        height: 40%;
+        width: 100%;
+        display: block;
+        font-size: 35px; 
+    }
+
+   .item { 
+    height: 100%;
+    }
+
+    .main-nav{  
+        display: flex;
+        flex-direction: column;     
+        width: 200px;
+        background-color: white;
+        color:grey;
+        justify-content: space-evenly;
+        text-align: right;   
     }
     
+    .main-title {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-size: 50px;     
+    }
 
-  } */
+    .circle1 {
+         height: 550px;
+         width: 550px;    
+     }
+
+     .circleshape {
+        font-size: 2.5vh;
+      }
+      
+     .contact-form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-size: 35px;   
+    }
+
+    .project {
+        margin: 15px;
+        padding: 15px;
+        font-size: 30px;
+    }
+    
+   
+  } 
+
+
+
+
   
   
-  /*@media screen and (min-width: 800px) {
+  @media screen and (min-width: 1100px) {
   
     /*sizing tablets and desktop*/
-  /*  section  {
-      width: 33%;
-    }
-     .hamburger {
-    display: none;
+    body {
+        font-size: 35px;
+        padding: 0px;
+        margin:0px;   
     }
 
-  }*/
+    .hamburger, .page-header, .navbar {
+        display: none;
+        }
+
+        .index-body {
+            background-color: white;
+        }
+    
+        .index-content {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            height: 100vh;
+        }
+    
+        /*index page title*/
+          .main-title {   
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: gray;
+            font-size: 50px;
+            background-color: white;     
+        }
+    
+        .main-nav {  
+            display: flex;
+            flex-direction: column;     
+            width: 300px;
+            background-color: grey;
+            color: white;
+            justify-content: space-evenly;
+            text-align: right;
+            
+        }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 300px;
+        left: 0;
+        background-color: white;
+        color: grey;
+    }
+
+    .fullpage-nav {  
+        display: flex;
+        flex-direction: column;     
+        width: 300px;
+        justify-content: space-evenly;
+        text-align: right;     
+    }
+
+    .circle1 {
+         height: 600px;
+         width: 600px;  
+     }
+
+     .circleshape {
+        font-size: 3vh;
+      }
+      
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        color: gray;
+        font-size: 35px;   
+    }
+  }
   
