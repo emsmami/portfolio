@@ -84,6 +84,7 @@ ul {
         z-index: 1;   
         font-size: 20px;
         background-color: whitesmoke;
+        width: 180px;
     }
 
 
@@ -101,11 +102,13 @@ ul {
     flex-wrap: wrap;
 }
 
+
 .project{
     width: 200px;
     font-size: 2vh;
 }
-.projects > img {
+
+.projects img {
     width: 200px;
     height: 200px;
     padding: 10px;
@@ -117,26 +120,29 @@ a.button, a.index-button, a.aside-header {
     border: none;
     padding: 10px;
     text-decoration: none;
+    
 }
 
 a.dropdown {
     border: #536E5B;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
 }
 
-a.button:hover, a.index-button:hover, a.dropdown:hover {
+a.button:hover,  a.dropdown:hover, a.index-button:hover {
     background-color: whitesmoke;
     border: 2px solid darkslategray;
     color: darkslategray;
+    margin: 1px;
 }
 
-a.button:visited, a.aside-header:visited, a.dropdown:visited {
+a.button:visited, a.aside-header:visited, a.index-button:visited, a.dropdown:visited {
     color: darkslategray;
 }
 
-a.index-button:visited {
-    color:  #536E5B;
+a:visited {
+    background-color: darkslategray;
+    color: white;
 }
 
 .circle1 {
@@ -185,6 +191,8 @@ transform:translate(-50%,-50%);
         }
         
     }
+
+   
     /*sizing tablets small laptops*/
  @media screen and (min-width: 768px) {
 
@@ -267,20 +275,21 @@ transform:translate(-50%,-50%);
     .projects {
         display: flex;
         flex-direction: row;
-        align-items: top;
+        /* bring in with second app align-items: top;*/
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
         color: white;
-        font-size: 35px;   
+        /*font-size: 35px;   */
     }
 
     .project {
+       
         margin: 15px;
         padding: 15px;
-        font-size: 2vh;
-        width: 300px;
+        font-size: 2.5vh;
+        width: 400px;
         text-align: left;
     }
 
@@ -346,6 +355,15 @@ transform:translate(-50%,-50%);
             
         }
 
+        a.index-button:visited {
+            color:  white;
+        }
+        
+        a.index-button:hover {
+            background-color: white;
+            color: darkslategray;
+        }
+
     .aside {
         display: flex;
         flex-direction: column;
@@ -382,7 +400,25 @@ transform:translate(-50%,-50%);
         margin-left: auto;
         margin-right: auto;
         color: #404e5c;
-        font-size: 35px;   
+        font-size: 35px;  
+        height: 100%; 
     }
+    
+    .content-projects {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        color: #404e5c;
+       
+    }
+
+    .project {
+        width: 600px;
+    }
+
   }
   
