@@ -68,6 +68,7 @@ ul {
     display: block;
     text-align: right;
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .nav-dropdown {
@@ -101,17 +102,39 @@ ul {
 }
 
 .project {
-    width: 200px;
-    font-size: 2vh;
+    width: 300px;
+    font-size: 2.5vh;
     align-items: center;
     text-align: left;
     color: white;
 }
 
 .projects img {
-    width: 200px;
-    height: 200px;
+   margin: auto;
+    width: 298px;
+    height: 298px;
+    align-items: center;
 }
+
+#appFig {
+    margin-top: 10px;
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    max-width: 320px;
+    margin: auto;
+    justify-content: center;
+}
+
+#appFigCaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+
 
 a.button,
 a.index-button,
@@ -122,6 +145,31 @@ a.aside-header {
     text-decoration: none;
 
 }
+
+a.projects-button {
+    border: 2px solid lightgray;
+    padding: 6px;
+    text-decoration: none;
+    min-width: 250%;
+    background-color: white;
+    color: darkslategray;
+    
+}
+
+a.projects-button:visited {
+    border: 2px solid lightgray;
+    background-color: white;
+    color: darkslategray;
+}
+
+a.projects-button:hover {
+    border: 1px solid lightgray;
+    padding: 8px;
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+}
+
 
 a.dropdown {
     border: #536E5B;
@@ -223,6 +271,18 @@ a {
     margin: 3px;
 }
 
+#linkedInFigCaption {
+    font-size: 2vh;
+    color: #404e5c;
+    padding-right: 5px;
+}
+
+#gitHubFigCaption {
+    font-size: 2vh;
+    color: #404e5c;
+    padding-right: 5px;
+}
+
 @media screen and (min-width: 500px) {
     .circle1 {
         height: 400px;
@@ -248,18 +308,45 @@ a {
     }
 
     .project {
-        width: 300px;
-        font-size: 2vh;
+        width: 400px;
+        font-size: 2.5vh;
         align-items: center;
         text-align: left;
     }
 
-    .projects img {
-        width: 300px;
-        height: 300px;
-        padding: 10px;
-        margin: 10px;
+    #appFig {
+        margin-top: 10px;
+        border: thin #c0c0c0 solid;
+        display: flex;
+        flex-flow: column;
+        max-width: 420px;
+        margin: auto;
+        justify-content: center;
+       
     }
+    
+    #appFigCaption  {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .projects img {
+        width: 398px;
+        height: 398px;
+    }
+
+    a.projects-button {
+        width: 60%;
+        margin-right: 15px;
+    }
+
+    #linkedInFigCaption {
+        padding-top: 6px;
+    }
+    
 }
 
 /*sizing tablets small laptops*/
@@ -353,14 +440,50 @@ a {
 
     .project {
         width: 400px;
-        font-size: 2vh;
+        font-size: 2.5vh;
         align-items: center;
         text-align: left;
     }
 
+
+    #appFig {
+        margin-top: 10px;
+        border: thin #c0c0c0 solid;
+        display: flex;
+        flex-flow: column;
+        max-width: 420px;
+        margin: auto;
+        justify-content: center;
+       
+    }
+    
+    #appFigCaption  {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+    }
     .projects img {
-        width: 300px;
-        height: 300px;
+        width: 398px;
+        height: 398px;
+    }
+    a.projects-button {
+        border: 1px solid lightgray;
+        padding: 8px;
+        text-decoration: none;
+        width: 40%;
+        background-color: white;
+        color: gray;
+    }
+
+    a.projects-button:hover {
+        border: 1px solid lightgray;
+        padding: 8px;
+        text-decoration: none;
+        width: 40%;
+        background-color: gray;
+        color: white;
     }
 }
 
@@ -420,6 +543,28 @@ a {
     a.index-button:hover {
         background-color: white;
         color: darkslategray;
+    }
+
+    a.projects-button {
+        border: 2px solid lightgray;
+        padding: 8px;
+        text-decoration: none;
+        width: 30%;
+        background: white;
+        color: gray;
+        box-shadow: 2em
+
+    }
+
+    a.projects-button:hover {
+        border: 2px solid lightgray;
+        padding: 8px;
+        text-decoration: none;
+        width: 30%;
+        background:gray;
+        color:white;
+        box-shadow: 2em
+
     }
 
     .aside {
@@ -487,11 +632,32 @@ a {
         align-items: center;
         text-align: left;
         width: 600px;
+        margin-top: 10px;
+    }
+
+    #appFig{
+        margin-top: 10px;
+        border: thin #c0c0c0 solid;
+        display: flex;
+        flex-flow: column;
+        max-width: 352px;
+        margin: auto;
+        justify-content: center;
+       
+    }
+    
+    #appFigCaption {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
     }
 
     .project img {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
+        margin: 0px;
     }
 
 }
