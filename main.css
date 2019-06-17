@@ -98,7 +98,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .project {
@@ -134,26 +134,31 @@ ul {
     text-align: center;
 }
 
-
-
 a.button,
-a.index-button,
 a.aside-header {
     background-color: none;
     border: none;
     padding: 10px;
     text-decoration: none;
+}
 
+a.index-button {
+    color: #404e5c;
+    background-color: none;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
 }
 
 a.projects-button {
+    display: inline-block;
     border: 2px solid lightgray;
     padding: 6px;
+    margin-bottom: 5px;
     text-decoration: none;
-    min-width: 250%;
+    width: 25%;
     background-color: white;
     color: darkslategray;
-    
 }
 
 a.projects-button:visited {
@@ -169,7 +174,6 @@ a.projects-button:hover {
     background-color: gray;
     color: white;
 }
-
 
 a.dropdown {
     border: #536E5B;
@@ -204,7 +208,6 @@ a {
 
 .extra-line-height {
     padding-bottom: 30px;
-
 }
 
 .circle1 {
@@ -349,7 +352,7 @@ a.contact-button:hover {
     }
 
     a.projects-button {
-        width: 60%;
+        width: 25%;
         margin-right: 15px;
     }
 
@@ -485,7 +488,7 @@ a.contact-button:hover {
         text-decoration: none;
         width: 40%;
         background-color: white;
-        color: gray;
+        /*color: gray;*/
     }
 
     a.projects-button:hover {
@@ -547,6 +550,14 @@ a.contact-button:hover {
         text-align: right;
     }
 
+    a.button {
+        color: #405e4c;
+    }
+
+    a.index-button {
+        color: white;
+    }
+
     a.index-button:visited {
         color: white;
     }
@@ -562,7 +573,7 @@ a.contact-button:hover {
         text-decoration: none;
         width: 30%;
         background: white;
-        color: gray;
+        /*color: gray;*/
         box-shadow: 2em
 
     }
@@ -602,7 +613,7 @@ a.contact-button:hover {
     }
 
     .circleshape {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
 
     .content {
