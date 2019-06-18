@@ -4,7 +4,7 @@
 
 body {
     height: 100%;
-    font-size: 24px;
+    /*font-size: 24px;*/
     color: black;
     display: block;
     text-align: center;
@@ -175,6 +175,32 @@ a.projects-button:hover {
     color: white;
 }
 
+a.email-button {
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid lightgray;
+    padding: 6px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    width: 25%;
+    background-color: white;
+    color: darkslategray;
+}
+
+a.email-button:visited {
+    border: 2px solid lightgray;
+    background-color: white;
+    color: darkslategray;
+}
+
+a.email-button:hover {
+    border: 1px solid lightgray;
+    padding: 8px;
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+}
+
 a.dropdown {
     border: #536E5B;
     padding: 8px;
@@ -229,7 +255,7 @@ a {
     position: relative;
     top: 50%;
     left: 50%;
-    font-size: 2vh;
+    font-size: 3vw;
 }
 
 .fullpage-nav,
@@ -303,7 +329,7 @@ a.contact-button:hover {
     }
 
     .circleshape {
-        font-size: 2.4vh;
+        font-size: 2.3vw;
     }
 
     .contact-container {
@@ -364,7 +390,7 @@ a.contact-button:hover {
 }
 
 /*sizing tablets small laptops*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 715px) {
 
     body {
         background-color: #404e5c;
@@ -433,7 +459,7 @@ a.contact-button:hover {
     }
 
     .circleshape {
-        font-size: 2.8vh;
+        font-size: 2.6vW;
     }
 
     .contact-form {
@@ -498,6 +524,12 @@ a.contact-button:hover {
         width: 40%;
         background-color: gray;
         color: white;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .circleshape {
+        font-size: 2vW;
     }
 }
 
@@ -613,7 +645,7 @@ a.contact-button:hover {
     }
 
     .circleshape {
-        font-size: 2.5vh;
+        font-size: 1.8vw;
     }
 
     .content {
@@ -682,4 +714,22 @@ a.contact-button:hover {
         margin: 0px;
     }
 
+}
+
+@media screen and (min-width: 1380px) {
+    .circleshape {
+        font-size: 1.6vW;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .circleshape {
+        font-size: 1.4vW;
+    }
+}
+
+@media screen and (min-width: 1880px) {
+    .circleshape {
+        font-size: 1.2vW;
+    }
 }
