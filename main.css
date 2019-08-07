@@ -631,6 +631,12 @@ a.contact-button:hover {
         color: #404e5c;
     }
 
+    .fullLengthAside {
+        height: 300vh;
+        width: 300px;
+        background-color: white;
+    }
+
     .fullpage-nav {
         display: flex;
         flex-direction: column;
@@ -712,6 +718,10 @@ a.contact-button:hover {
         width: 350px;
         height: 350px;
         margin: 0px;
+    }
+
+    .nextProjects {
+        margin-top: 100px;
     }
 
 }
